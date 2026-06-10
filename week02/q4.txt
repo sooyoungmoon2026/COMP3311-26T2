@@ -1,0 +1,24 @@
+Data
+- person
+    - HAS: TFN, name, address
+    - TYPES: authors, editors
+- author
+    - MAY HAVE: pen-name
+- publisher
+    - HAS: ABN, name, address
+- book
+    - HAS: title, edition number, isbn
+Relationships
+- Editors edit books
+- Authors write books
+Constraints
+- Every person has exactly one distinct TFN
+- Every editor works for exactly one publisher
+- An editor cannot be an author
+- Every book has exactly one editor
+- each edition of book has one unique isbn
+- each edition of a book is published by exactly one publisher
+
+Assumptions
+- This database only includes people who earn money
+- Every book in the database is published
